@@ -4,12 +4,17 @@ import Authenticate from './Authenticate'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [token, setToken] = useState(null);
 
   return (
     <>
-      <SignUpForm></SignUpForm>
-      <Authenticate></Authenticate>
+      {
+        token
+        ? <Authenticate token={token}></Authenticate>
+        : <SignUpForm setToken={setToken}></SignUpForm>
+      }
+      {/* <SignUpForm setToken={setToken}></SignUpForm>
+      <Authenticate token={token}></Authenticate> */}
     </>
   )
 }
