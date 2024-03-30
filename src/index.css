@@ -26,6 +26,17 @@ h1 {
   line-height: 1.1;
 }
 
+.columnContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inputLine {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

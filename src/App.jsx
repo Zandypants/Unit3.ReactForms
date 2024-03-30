@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import SignUpForm from './SignUpForm'
+import Authenticate from './Authenticate'
 import './App.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
       <SignUpForm></SignUpForm>
+      <Authenticate></Authenticate>
     </>
   )
 }
